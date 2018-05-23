@@ -79,9 +79,17 @@ os.rename('secrets.txt', 'supersecret.txt')
 
 #13. See if you can see the file in your file explorer
 
+
+
 #14. Create a list variable named file_names that contains a list of filenames
 
+file_names = ['file_a', 'file_b']
+
 #15. Use the writelines() function to append the filenames to the filenames.txt file
+
+open_file = open('filenames.txt', 'a')
+open_file.writelines(file_names)
+open_file.close()
 
 #16. Delete the initial secrets.txt file now that you have a super secret hidden version
 
