@@ -17,14 +17,20 @@ some_list = []
 for line in open_file:
     some_list += [line]
 
+#4. Print out all the lines from the file from your variable
+
 for i in some_list:
     print(i)
 
-#4. Print out all the lines from the file from your variable
-
 #5. Close the filenames.txt file and print if the file is open or closed
 
+open_file.close()
+
+print(open_file.closed)
+
 #6. Create a file using the open() function called secrets.txt
+
+open_file = open('secrets.txt', 'w')
 
 #7. Write your own secrets to the file with the write() function
 
