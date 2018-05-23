@@ -68,7 +68,14 @@ content_file = open_file.read()
 
 print(content_file)
 
+content_file = open_file.close()
+
 #12. Rename the secrets.txt and make it a "hidden" file named .supersecret.txt using the os.rename() function
+
+import os
+
+os.rename('secrets.txt', 'supersecret.txt')
+
 
 #13. See if you can see the file in your file explorer
 
