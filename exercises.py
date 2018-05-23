@@ -34,13 +34,39 @@ open_file = open('secrets.txt', 'w')
 
 #7. Write your own secrets to the file with the write() function
 
+open_file.write('your own secrets')
+
 #8. Close the secrets.txt file using the close() method. DON'T FORGET!
+
+open_file.close()
 
 #9. Print out the contents of the text file in your terminal to prove it worked
 
+print('\n')
+
+open_file = open('secrets.txt', 'r')
+open_contents = open_file.read()
+print(open_contents)
+
 #10. Open your secrets.txt file in append mode and write some more super secret info
 
+print('\n')
+
+open_contents = open_file.close()
+
+open_file = open('secrets.txt', 'a')
+open_file.write('\nsome more secret info')
+
+
 #11. Close the secrets.txt file again using the close() function
+
+open_file.close()
+
+open_file = open('secrets.txt', 'r')
+
+content_file = open_file.read()
+
+print(content_file)
 
 #12. Rename the secrets.txt and make it a "hidden" file named .supersecret.txt using the os.rename() function
 
