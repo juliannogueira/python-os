@@ -94,3 +94,10 @@ open_file.close()
 #16. Delete the initial secrets.txt file now that you have a super secret hidden version
 
 #17. BOSS LEVEL: Use the input() function to accept user input of a filename to create and create that file.
+
+print('\nPlease enter the name of file that you want to create.')
+
+new_file = input()
+
+add_file = open(new_file, 'w')
+add_file.close()
